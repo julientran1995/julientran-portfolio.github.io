@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Design & Branding</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+       
+        <header>
+            <div class="logo1">
+			<a href="index.html"><img src="images/logo.png" title="Julien" alt="Julien"/></a>
+		</div>
+            
+            <nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="education.html">Education</a></li>
+                                <li><a href="experience.html">Experience</a></li>
+                                <li><a href="skill.html">Skills</a></li>
+				<li><a href="personal.html">Personal</a></li>
+			</ul>
+		</nav>
+            
+            
+            <div class="footer">
+                <hr><br>
+                <div class="bold">Julien Tran<br><br></div>
+                <img src="images/phone.png" class="contact">+65 85497066<br>
+                <img src="images/email.png" class="contact"><a href="mailto:julientran1995@gmail.com">julientran1995@gmail.com</a>
+                <br><br><hr>
+                
+            </div>
+        </header>
+        
+        <section class="main">
+            
+            <section class="top" style="background-image:url(images/brand/header.png);">	
+			<div class="wrapper content_header">	
+				<h1 class="title">Product Design & Branding</h1>
+			</div>		
+		</section>
+		<section class="wrapper">
+			<div class="content">
+                         
+                            <p>
+                                One of my specialty is conceptualization and creation or corporate identity. I'm capable of creating branding for individuals or group, as well as designing any related collateral and products. 
+                            </p>
+                            
+                            <p>
+                                I'm always aspired to innovate and create unique identities and products with my design.
+                            </p>
+                            
+                             <table>
+                                 <tr>
+                                   <td class="leftcol"><h2>Gallery</h2></td>
+                                   <td class="rightcol">
+                            
+                           <style type="text/css">	
+
+a:-webkit-any-link {
+  	text-decoration: none;	
+}
+
+
+ul	
+{
+	list-style-type: none;	
+}
+
+.fade {
+   opacity: 0.8;		
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fade:hover {
+      opacity: 1;	
+}
+
+.img-wrapper {
+	width: 195px;
+	height: 230px;
+	border: 0.1em solid #ccc;
+	border-radius: 0.4em;
+	background-color: #f3f3f3;
+	box-shadow: 0.1em 0.1em 0.5em -0.2em #777;
+	margin: 1em 1em;
+}
+
+img {
+	border-radius: 0.4em 0.4em 0em 0em;		
+}
+
+.gallery-wrapper ul li{				
+	display: inline-block;		
+
+}
+
+h1 {
+	padding-left: 14em;
+}
+
+h4 {							
+	text-align: center;
+	font-size: 1em;
+	margin: 0;
+	//padding: 0.5em 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+}
+
+.logo {
+	margin-left: 22em;
+	margin-bottom: 4em;
+}
+
+</style>
+
+
+
+<div class="gallery-wrapper">
+	<ul>
+		<li>
+			<figure class="img-wrapper fade"><a class="fancybox" href="images/brand/img1.png"><img  src="images/brand/thumb1.png"><h4>Logo</h4></a></figure>
+		</li>
+
+		<li>
+			<figure class="img-wrapper fade"><a class="fancybox" href="images/brand/img2.jpg"><img src="images/brand/thumb2.png"><h4>Mug</h4></a></figure>
+		</li>
+
+		<li>
+			<figure class="img-wrapper fade"><a class="fancybox" href="images/brand/img3.jpg"><img src="images/brand/thumb3.png"><h4>Trinket</h4></a></figure>
+		</li>
+			
+		<li>
+			<figure class="img-wrapper fade"><a class="fancybox" href="images/brand/img4.jpg"><img src="images/brand/thumb4.png"><h4>USB card</h4></a></figure>
+		</li>
+
+		<li>
+			<figure class="img-wrapper fade"><a class="fancybox" href="images/brand/img5.jpg"><img src="images/brand/thumb5.png"><h4>USB card</h4></a></figure>
+		</li>
+                
+                <li>
+			<figure class="img-wrapper fade"><a class="fancybox" href="images/brand/img6.jpg"><img src="images/brand/thumb6.png"><h4>Letter</h4></a></figure>
+		</li>
+		
+	</ul>
+</div> 
+
+</td>
+                               </tr>
+                               
+                               </table> 
+                                
+			</div>
+		</section>
+
+		
+	</section>
+        
+    </body>
+   
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.min.js"></script>
+    
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+</html>
